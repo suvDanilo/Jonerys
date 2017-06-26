@@ -1,5 +1,5 @@
 #!/bin/bash
-# Bash script by Kartojal.
+# Bash script by Danilo Borges.
 
 # Principal menu 
 dcct_menu() {
