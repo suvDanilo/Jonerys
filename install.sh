@@ -1,3 +1,15 @@
+apt-get update
+apt-get upgrade
+apt-get install sudo
+apt-get install screen
+apt-get install git
+
+echo "########### Script do BADGuy aperfeiçoado por Danilo Borges // criando área Swap"
+dd if=/dev/zero of=/swapfile bs=1M count=2048 ; mkswap /swapfile ; swapon /swapfile
+echo "/swapfile swap swap defaults 0 0" >> /etc/fstab
+
+echo "DaniloBorges Mining Script!"
+echo "By: https://github.com/suvDanilo"
 #!/bin/bash
 tput setaf 7 ; tput setab 6 ; tput bold ; printf '%35s%s%-20s\n' "Configuracao Inicial do VPS Mining" ; tput sgr0
 tput setaf 3 ; tput bold ; echo "" ; echo "Este script ira compilar o xmr-stak-cpu, fazer configuracoes no sysctl.conf e" ; tput sgr0
